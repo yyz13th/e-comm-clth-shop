@@ -28,6 +28,7 @@ $main-color: black;
       outline: none;
     }
 
+    //if pressed - assign class to next element
     &:focus ~ .form-input-label {
       @include shrinkLabel();
     }
