@@ -8,6 +8,8 @@ import {
     // signInWithGoogleRedirect 
 } from "../../utils/firebase/firebase.utils";
 
+import SignUpForm from "../../components/sign-up-form/sign-up-form.component";
+
 const SignIn = () => {
     //save auth info after remounting 
     // useEffect(() => {
@@ -32,6 +34,7 @@ const SignIn = () => {
             <h1>Sign In</h1>
             <button onClick={logGoogleUser()}>Sign In With Google Popup</button>
             {/* <button onClick={signInWithGoogleRedirect}>Sign In With Google Redirect</button> */}
+            <SignUpForm />
         </div>
     )
 }
