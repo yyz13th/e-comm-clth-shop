@@ -39,14 +39,14 @@ const clearCartItem = (cartItems, cartItemToClear) => {
     return cartItems.filter(cartItem => cartItem.id !== cartItemToClear.id);
 }
 export const CartContext = createContext({
-    isCartOpen: false, //checks whether the icon is pressed
+    // isCartOpen: false, //checks whether the icon is pressed
     setIsCartOpen: () => {},
-    cartItems: [], // basic state hence empty array
+    // cartItems: [], // basic state hence empty array
     addItemToCart: () => {},
     removeItemFromCart: () => {},
     clearItemFromCart: () => {},
-    cartCount: 0,
-    cartTotal: 0
+    // cartCount: 0,
+    // cartTotal: 0
 });
 
 const CART_ACTION_TYPES = {
